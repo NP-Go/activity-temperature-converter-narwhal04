@@ -9,14 +9,14 @@ var resultMessage string
 func convertKelvin(temperatureInput float64) (float64, float64) {
 	//Insert your code here
 	resultFahrenheit := ((9.0 / 5.0) * temperatureInput) - 459.67
-	resultCelsius := (5.0 / 9.0) * (resultFahrenheit - 32.0)
+	resultCelsius := (5.0 / 9.0) * (resultFahrenheit - 32)
 	//Do not remove this line
 	return resultFahrenheit, resultCelsius
 }
 
 func convertCelsius(temperatureInput float64) (float64, float64) {
 	//Insert your code here
-	resultFahrenheit := (9.0/5.0)*(temperatureInput) + 32.0
+	resultFahrenheit := (9.0/5.0)*(temperatureInput) + 32
 	resultKelvin := (5.0 / 9.0) * (resultFahrenheit + 459.67)
 
 	//Do not remove this line
@@ -26,7 +26,7 @@ func convertCelsius(temperatureInput float64) (float64, float64) {
 func convertFahrenheit(temperatureInput float64) (float64, float64) {
 	//Insert your code here
 	resultKelvin := (5.0 / 9.0) * (temperatureInput + 459.67)
-	resultCelsius := (5.0 / 9.0) * (temperatureInput - 32.0)
+	resultCelsius := (5.0 / 9.0) * (temperatureInput - 32)
 
 	//Do not remove this line
 	return resultKelvin, resultCelsius
